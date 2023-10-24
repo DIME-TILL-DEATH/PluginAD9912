@@ -115,6 +115,7 @@ void SineTab::btnSetFields()
     std::vector<WriteFieldStructure> dataToSend;
 
     dataToSend.push_back({"FTW0", "Frequency Tuning Word", controlWord&0xFFFFFFFFFFFF});
+    dataToSend.push_back({"Register update", "Update Mirrored regs", 0x1});
 
     list << "Установлено в регистр FTW0";
 
